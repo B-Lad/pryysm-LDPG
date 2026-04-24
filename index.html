@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#1e3a6e">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Pryysm MES — Additive Manufacturing Execution System for 3D Print Farms</title>
+    <meta name="description" content="Pryysm is the additive manufacturing execution system built for 3D print farms. Schedule jobs, manage printer fleets, track materials, enforce quality gates, and ship parts faster — FDM, SLA & SLS.">
+    <meta name="keywords" content="additive manufacturing execution system, MES software, 3D print farm management, 3D printing scheduling, FDM SLA SLS management, print queue software, AM workflow software, 3D printer fleet management, manufacturing execution system, 3D printing MES, additive manufacturing software, print farm scheduling">
+    <meta name="author" content="3D Prodigy">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="https://getpryysm.com/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://getpryysm.com/">
+    <meta property="og:title" content="Pryysm MES — Additive Manufacturing Execution System for 3D Print Farms">
+    <meta property="og:description" content="The additive manufacturing execution system built for 3D print farms. Schedule jobs, manage fleets, track materials, enforce quality gates — FDM, SLA & SLS.">
+    <meta property="og:image" content="https://getpryysm.com/images/og-cover.jpg">
+    <meta property="og:site_name" content="Pryysm by 3D Prodigy">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://getpryysm.com/">
+    <meta name="twitter:title" content="Pryysm MES — Additive Manufacturing Execution System for 3D Print Farms">
+    <meta name="twitter:description" content="Schedule jobs, manage printer fleets, track materials, and enforce quality gates — all in one platform built for FDM, SLA & SLS operations.">
+    <meta name="twitter:image" content="https://getpryysm.com/images/og-cover.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 38'%3E%3Cpath d='M22 3L40 12L22 21L4 12L22 3Z' stroke='%23F5A623' stroke-width='3' stroke-linejoin='round' fill='none'/%3E%3Cpath d='M4 19L22 28L40 19' stroke='%23F5A623' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3Cpath d='M4 26L22 35L40 26' stroke='%23F5A623' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E">
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Structured Data: SoftwareApplication -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Pryysm MES",
+        "applicationCategory": "BusinessApplication",
+        "applicationSubCategory": "Manufacturing Execution System",
+        "operatingSystem": "Web",
+        "offers": {
+            "@type": "Offer",
+            "availability": "https://schema.org/OnlineOnly",
+            "description": "Custom pricing based on fleet size and requirements. Book a demo to learn more.",
+            "url": "https://calendly.com/bhavin-lad-3d-prodigy/pryysm-demo"
+        },
+        "description": "Additive Manufacturing Execution System for 3D print farms. Schedule jobs, manage printer fleets, track materials, enforce quality gates — built for FDM, SLA, and SLS operations.",
+        "url": "https://getpryysm.com",
+        "publisher": {
+            "@type": "Organization",
+            "name": "3D Prodigy",
+            "url": "https://getpryysm.com",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://getpryysm.com/images/logo.png"
+            }
+        }
+    }
+    </script>
+    
+    <!-- Structured Data: Organization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Pryysm by 3D Prodigy",
+        "alternateName": "3D Prodigy",
+        "url": "https://getpryysm.com",
+        "logo": "https://getpryysm.com/images/logo.png",
+        "sameAs": [
+            "https://twitter.com/3dprodigy",
+            "https://linkedin.com/company/3d-prodigy"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "sales",
+            "url": "https://calendly.com/bhavin-lad-3d-prodigy/pryysm-demo"
+        }
+    }
+    </script>
+    
+    <!-- Structured Data: FAQPage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is an Additive Manufacturing Execution System (MES)?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "An Additive Manufacturing Execution System (MES) is specialized software that manages and optimizes 3D printing operations. It handles job scheduling, printer fleet monitoring, material inventory management, quality control workflows, and production traceability — specifically built for FDM, SLA, and SLS technologies rather than adapted from traditional manufacturing MES."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Which 3D printing technologies does Pryysm support?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Pryysm supports FDM (Fused Deposition Modeling), SLA (Stereolithography), and SLS (Selective Laser Sintering). This covers the majority of industrial and professional 3D printers including models from Creality, Bambu Lab, Prusa, Formlabs, EOS, and others."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can Pryysm handle multiple companies or departments?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Pryysm is architected as a multi-tenant SaaS from the ground up. Each tenant operates in a fully isolated environment with PostgreSQL Row Level Security enforcing strict data boundaries. This makes it ideal for service bureaus, corporate R&D centers with multiple divisions, or educational institutions."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How does the AI Assistant work?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The Pryysm AI Assistant analyzes your operational data to provide insights, anomaly detection, and recommendations. You can ask natural language questions like 'What is my fleet OEE this week?' or 'Which material will stock out first?' The AI can also suggest optimal job sequencing and flag potential quality risks before they occur."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is my data secure?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Security is core to Pryysm's architecture. We use JWT-based authentication with bcrypt password hashing, PostgreSQL Row Level Security for tenant isolation, and HTTPS encryption for all data in transit. Enterprise plans include SSO/SAML integration and dedicated infrastructure options."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I import data from my existing spreadsheets?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Pryysm supports CSV import for materials, printers, user lists, and historical job data. Our onboarding team can also assist with migration from existing systems via our REST API. Most teams are fully operational within one business day."
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Ambient Background Orbs -->
+    <div class="ambient-orb orb-1" aria-hidden="true"></div>
+    <div class="ambient-orb orb-2" aria-hidden="true"></div>
+    <div class="ambient-orb orb-3" aria-hidden="true"></div>
+    
+    <!-- Navigation -->
+    <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="#" class="logo" aria-label="Pryysm Home">
+                <svg class="logo-icon" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <!-- Top complete layer -->
+                    <path d="M22 3L40 12L22 21L4 12L22 3Z" stroke="#F5A623" stroke-width="2.8" stroke-linejoin="round"/>
+                    <!-- Middle layer bottom edge -->
+                    <path d="M4 19L22 28L40 19" stroke="#F5A623" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    <!-- Bottom layer bottom edge -->
+                    <path d="M4 26L22 35L40 26" stroke="#F5A623" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="logo-name">Pryysm</span>
+                <span class="logo-by">by 3D Prodigy</span>
+            </a>
+            
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+                <span class="hamburger"></span>
+            </button>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#how-it-works" class="nav-link">How it Works</a>
+                <a href="#pricing" class="nav-link">Get Started</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+            </div>
+            
+            <div class="nav-actions">
+                <a href="#" class="btn btn-ghost">Sign In</a>
+                <a href="https://calendly.com/bhavin-lad-3d-prodigy/pryysm-demo" target="_blank" rel="noopener noreferrer" class="btn btn-primary glow">Book a Demo</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-container">
+            <div class="hero-badge" data-animate="fade-up">
+                <span class="badge-dot"></span>
+                Early access now available
+            </div>
+            
+            <h1 class="hero-title" data-animate="fade-up" data-delay="100">
+                The execution layer for<br>
+                <span class="gradient-text">additive manufacturing</span>
+            </h1>
+            
+            <p class="hero-subtitle" data-animate="fade-up" data-delay="200">
+                Schedule jobs across your printer fleet, track materials in real time, enforce quality gates, and ship parts faster — all from one multi-tenant platform built for FDM, SLA, and SLS operations.
+            </p>
+            
+            <div class="hero-ctas" data-animate="fade-up" data-delay="300">
+                <a href="https://calendly.com/bhavin-lad-3d-prodigy/pryysm-demo" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg glow">
+                    Book a Demo
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#how-it-works" class="btn btn-outline btn-lg">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                    See How it Works
+                </a>
+            </div>
+            
+
+        </div>
+        
+        <!-- Hero Visual / Dashboard Preview -->
+        <div class="hero-visual" data-animate="fade-up" data-delay="500">
+            <div class="dashboard-mockup">
+                <div class="mockup-header">
+                    <div class="mockup-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="mockup-title">Factory Overview — Pryysm MES</div>
+                </div>
+                <div class="mockup-body">
+                    <div class="mockup-sidebar">
+                        <div class="mockup-nav-item active">Dashboard</div>
+                        <div class="mockup-nav-item">Print Requests</div>
+                        <div class="mockup-nav-item">Fleet</div>
+                        <div class="mockup-nav-item">Schedule</div>
+                        <div class="mockup-nav-item">Inventory</div>
+                        <div class="mockup-nav-item">QC</div>
+                    </div>
+                    <div class="mockup-content">
+                        <div class="mockup-kpi-row">
+                            <div class="mockup-kpi">
+                                <div class="mockup-kpi-label">Active Jobs</div>
+                                <div class="mockup-kpi-value">24</div>
+                            </div>
+                            <div class="mockup-kpi">
+                                <div class="mockup-kpi-label">Fleet OEE</div>
+                                <div class="mockup-kpi-value">87%</div>
+                            </div>
+                            <div class="mockup-kpi">
+                                <div class="mockup-kpi-label">Queue</div>
+                                <div class="mockup-kpi-value">12</div>
+                            </div>
+                            <div class="mockup-kpi">
+                                <div class="mockup-kpi-label">NCRs</div>
+                                <div class="mockup-kpi-value">2</div>
+                            </div>
+                        </div>
+                        <div class="mockup-chart-area">
+                            <div class="mockup-chart-bar" style="height: 40%"></div>
+                            <div class="mockup-chart-bar" style="height: 65%"></div>
+                            <div class="mockup-chart-bar" style="height: 80%"></div>
+                            <div class="mockup-chart-bar" style="height: 55%"></div>
+                            <div class="mockup-chart-bar" style="height: 90%"></div>
+                            <div class="mockup-chart-bar" style="height: 70%"></div>
+                            <div class="mockup-chart-bar" style="height: 85%"></div>
+                        </div>
+                        <div class="mockup-fleet-row">
+                            <div class="mockup-printer running">PRUSA01 <span>Running</span></div>
+                            <div class="mockup-printer idle">PRUSA02 <span>Idle</span></div>
+                            <div class="mockup-printer running">FORML01 <span>Running</span></div>
+                            <div class="mockup-printer maintenance">EOS01 <span>Maintenance</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    
+    <!-- Problem / Solution -->
+    <section class="section problem-solution" id="problem">
+        <div class="section-container">
+            <div class="problem-grid">
+                <div class="problem-text" data-animate="fade-right">
+                    <span class="section-tag">The Problem</span>
+                    <h2 class="section-title">Running a print farm with spreadsheets breaks at scale</h2>
+                    <p class="section-desc">
+                        Most additive manufacturing teams still juggle print requests in email, track filament stock in spreadsheets, and schedule jobs on whiteboards. When you scale past a handful of machines, the chaos compounds — missed deadlines, material stockouts, and zero visibility into OEE.
+                    </p>
+                    <ul class="problem-list">
+                        <li><span class="problem-x">×</span> No real-time fleet visibility</li>
+                        <li><span class="problem-x">×</span> Manual job scheduling conflicts</li>
+                        <li><span class="problem-x">×</span> Inventory surprises mid-print</li>
+                        <li><span class="problem-x">×</span> Disconnected quality workflows</li>
+                    </ul>
+                </div>
+                <div class="solution-text" data-animate="fade-left">
+                    <span class="section-tag tag-gold">The Solution</span>
+                    <h2 class="section-title">One system for the entire AM lifecycle</h2>
+                    <p class="section-desc">
+                        Pryysm MES unifies print request intake, fleet scheduling, material inventory, and quality control into a single platform. Built specifically for additive manufacturing — not adapted from generic MES software.
+                    </p>
+                    <ul class="solution-list">
+                        <li><span class="solution-check">✓</span> Live OEE across FDM, SLA, and SLS</li>
+                        <li><span class="solution-check">✓</span> Intelligent job scheduling with WIP limits</li>
+                        <li><span class="solution-check">✓</span> Real-time filament, resin & powder tracking</li>
+                        <li><span class="solution-check">✓</span> Integrated NCR and QC workflows</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Features Bento Grid -->
+    <section class="section features" id="features">
+        <div class="section-container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Platform</span>
+                <h2 class="section-title">Everything your AM operation needs</h2>
+                <p class="section-desc">From print request to shipped part — every stage of the additive manufacturing workflow, connected.</p>
+            </div>
+            
+            <div class="bento-grid">
+                <div class="bento-card bento-large" data-animate="fade-up" data-delay="0">
+                    <div class="bento-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+                    </div>
+                    <h3 class="bento-title">Factory Overview</h3>
+                    <p class="bento-desc">Real-time dashboard with active jobs, fleet OEE, pending requests, machine status, WIP limits by stage, and critical alerts — all at a glance.</p>
+                    <div class="bento-visual">
+                        <div class="mini-kpi">
+                            <div class="mini-kpi-item"><span class="mini-val">24</span><span class="mini-label">Active</span></div>
+                            <div class="mini-kpi-item"><span class="mini-val">87%</span><span class="mini-label">OEE</span></div>
+                            <div class="mini-kpi-item"><span class="mini-val">12</span><span class="mini-label">Queue</span></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bento-card" data-animate="fade-up" data-delay="100">
+                    <div class="bento-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+                    </div>
+                    <h3 class="bento-title">Print Requests</h3>
+                    <p class="bento-desc">Structured intake with material picker, tech selection, image upload, and automatic department routing.</p>
+                </div>
+                
+                <div class="bento-card" data-animate="fade-up" data-delay="150">
+                    <div class="bento-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+                    </div>
+                    <h3 class="bento-title">Printer Fleet</h3>
+                    <p class="bento-desc">Live machine monitoring with status tracking, OEE calculation, progress bars, and automatic job linkage.</p>
+                </div>
+                
+                <div class="bento-card bento-wide" data-animate="fade-up" data-delay="200">
+                    <div class="bento-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    </div>
+                    <h3 class="bento-title">Print Scheduling</h3>
+                    <p class="bento-desc">Production scheduling across your entire fleet with day/week/month views, job splitting across shifts, technician filters, and capacity-aware allocation. No more double-booked machines.</p>
+                    <div class="bento-visual">
+                        <div class="mini-timeline">
+                            <div class="mini-bar" style="left: 0; width: 30%; background: #2563EB;"></div>
+                            <div class="mini-bar" style="left: 35%; width: 45%; background: #0F9B6A;"></div>
+                            <div class="mini-bar" style="left: 55%; width: 25%; background: #6366F1;"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bento-card" data-animate="fade-up" data-delay="250">
+                    <div class="bento-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><path d="M3.27 6.96L12 12.01l8.73-5.05"/><path d="M12 22.08V12"/></svg>
+                    </div>
+                    <h3 class="bento-title">Material Inventory</h3>
+                    <p class="bento-desc">Track filaments, resins, and powders by type, color, and stock level. Automated reorder alerts and lot traceability.</p>
+                </div>
+                
+                <div class="bento-card" data-animate="fade-up" data-delay="300">
+                    <div class="bento-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+                    </div>
+                    <h3 class="bento-title">Quality Control</h3>
+                    <p class="bento-desc">Pass/fail inspections, inspection records, and Non-Conformance Reports (NCRs) with root cause tracking.</p>
+                </div>
+                
+                <div class="bento-card" data-animate="fade-up" data-delay="350">
+                    <div class="bento-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                    </div>
+                    <h3 class="bento-title">Multi-Tenant</h3>
+                    <p class="bento-desc">True SaaS multi-tenancy with PostgreSQL Row Level Security. One instance, infinite tenants, complete data isolation.</p>
+                </div>
+                
+                <div class="bento-card bento-wide" data-animate="fade-up" data-delay="400">
+                    <div class="bento-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm0 16a1 1 0 110-2 1 1 0 010 2zm1-5.24V7a1 1 0 00-2 0v5.76a3 3 0 102 0z"/></svg>
+                    </div>
+                    <h3 class="bento-title">AI Assistant</h3>
+                    <p class="bento-desc">Embedded AI copilot for insights, anomaly detection, and operational recommendations. Ask questions about OEE, bottlenecks, or material forecasts in natural language.</p>
+                    <div class="bento-visual">
+                        <div class="mini-chat">
+                            <div class="chat-bubble ai">"Your PA12 powder stock will reach reorder level by Friday based on current burn rate."</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- How It Works -->
+    <section class="section how-it-works" id="how-it-works">
+        <div class="section-container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Workflow</span>
+                <h2 class="section-title">From STL to shipped part in 8 stages</h2>
+                <p class="section-desc">Pryysm enforces a structured lifecycle that keeps every job traceable and every team accountable.</p>
+            </div>
+            
+            <div class="workflow" data-animate="fade-up">
+                <div class="workflow-step">
+                    <div class="workflow-num">01</div>
+                    <div class="workflow-content">
+                        <h4>Submitted</h4>
+                        <p>Engineer uploads model, selects material, and submits print request with department chargeback.</p>
+                    </div>
+                </div>
+                <div class="workflow-arrow" aria-hidden="true">→</div>
+                <div class="workflow-step">
+                    <div class="workflow-num">02</div>
+                    <div class="workflow-content">
+                        <h4>AM Review</h4>
+                        <p>Production team reviews feasibility, orientation, and material availability before approval.</p>
+                    </div>
+                </div>
+                <div class="workflow-arrow" aria-hidden="true">→</div>
+                <div class="workflow-step">
+                    <div class="workflow-num">03</div>
+                    <div class="workflow-content">
+                        <h4>Planning</h4>
+                        <p>Job is scheduled to a specific machine and operator based on capacity and priority.</p>
+                    </div>
+                </div>
+                <div class="workflow-arrow" aria-hidden="true">→</div>
+                <div class="workflow-step">
+                    <div class="workflow-num">04</div>
+                    <div class="workflow-content">
+                        <h4>Printing</h4>
+                        <p>Real-time progress tracking with automatic status updates and OEE contribution.</p>
+                    </div>
+                </div>
+                <div class="workflow-arrow" aria-hidden="true">→</div>
+                <div class="workflow-step">
+                    <div class="workflow-num">05</div>
+                    <div class="workflow-content">
+                        <h4>Post-Process</h4>
+                        <p>Support removal, washing, curing, and surface finishing with WIP limit enforcement.</p>
+                    </div>
+                </div>
+                <div class="workflow-arrow" aria-hidden="true">→</div>
+                <div class="workflow-step">
+                    <div class="workflow-num">06</div>
+                    <div class="workflow-content">
+                        <h4>QA Inspection</h4>
+                        <p>Dimensional checks, pass/fail decisions, and NCR generation if needed.</p>
+                    </div>
+                </div>
+                <div class="workflow-arrow" aria-hidden="true">→</div>
+                <div class="workflow-step">
+                    <div class="workflow-num">07</div>
+                    <div class="workflow-content">
+                        <h4>Dept Handoff</h4>
+                        <p>Approved parts are transferred to the requesting department with full traceability.</p>
+                    </div>
+                </div>
+                <div class="workflow-arrow" aria-hidden="true">→</div>
+                <div class="workflow-step">
+                    <div class="workflow-num">08</div>
+                    <div class="workflow-content">
+                        <h4>Closed</h4>
+                        <p>Job is archived with complete history — materials, times, costs, and quality records.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    
+
+    
+    <!-- How We Work — Enterprise Engagement -->
+    <section class="section engagement" id="pricing">
+        <div class="section-container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Get Started</span>
+                <h2 class="section-title">Every operation is different.<br>Let's build yours together.</h2>
+                <p class="section-desc">Like SAP or Salesforce, Pryysm is configured to fit your specific workflow — not the other way around. We start with a conversation, not a credit card.</p>
+            </div>
+
+            <div class="engagement-steps" data-animate="fade-up">
+                <div class="engagement-step">
+                    <div class="estep-num">01</div>
+                    <div class="estep-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg>
+                    </div>
+                    <h4 class="estep-title">Book a Discovery Call</h4>
+                    <p class="estep-desc">30 minutes with our team. Tell us about your print farm, fleet size, team structure, and current pain points.</p>
+                </div>
+                <div class="engagement-connector" aria-hidden="true">
+                    <svg viewBox="0 0 40 16" fill="none"><path d="M0 8h36M30 2l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div class="engagement-step">
+                    <div class="estep-num">02</div>
+                    <div class="estep-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/><path d="M9 3.5A9 9 0 015 7"/></svg>
+                    </div>
+                    <h4 class="estep-title">We Understand Your Problem</h4>
+                    <p class="estep-desc">We map your current workflow, identify bottlenecks, and scope exactly what modules you need — no bloat, no overwhelm.</p>
+                </div>
+                <div class="engagement-connector" aria-hidden="true">
+                    <svg viewBox="0 0 40 16" fill="none"><path d="M0 8h36M30 2l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div class="engagement-step">
+                    <div class="estep-num">03</div>
+                    <div class="estep-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <h4 class="estep-title">Custom Solution Designed</h4>
+                    <p class="estep-desc">We configure Pryysm specifically for your operation — your stages, your teams, your terminology, your KPIs.</p>
+                </div>
+                <div class="engagement-connector" aria-hidden="true">
+                    <svg viewBox="0 0 40 16" fill="none"><path d="M0 8h36M30 2l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div class="engagement-step">
+                    <div class="estep-num">04</div>
+                    <div class="estep-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+                    </div>
+                    <h4 class="estep-title">Guided Onboarding</h4>
+                    <p class="estep-desc">Dedicated onboarding specialist walks your team through the platform step by step — with training, data migration, and go-live support.</p>
+                </div>
+            </div>
+
+            <div class="engagement-cta-row" data-animate="fade-up">
+                <div class="engagement-cta-card">
+                    <div class="ecta-left">
+                        <span class="ecta-badge">No commitment required</span>
+                        <h3 class="ecta-title">Start with a conversation</h3>
+                        <p class="ecta-desc">Our team works with print farms of all sizes — from 5 machines to 500. Every engagement starts the same way: understanding you.</p>
+                        <ul class="ecta-list">
+                            <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 8 6 12 14 4"/></svg> 30-min live walkthrough, no slides</li>
+                            <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 8 6 12 14 4"/></svg> Custom onboarding plan built for your team</li>
+                            <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 8 6 12 14 4"/></svg> Pricing tailored to your fleet size & needs</li>
+                            <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 8 6 12 14 4"/></svg> No lengthy contracts to sign upfront</li>
+                        </ul>
+                    </div>
+                    <div class="ecta-right">
+                        <a href="https://calendly.com/bhavin-lad-3d-prodigy/pryysm-demo" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-xl glow ecta-btn">
+                            Book Your Free Demo
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                        <p class="ecta-note">Typically responds within 1 business day</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ -->
+    <section class="section faq" id="faq">
+        <div class="section-container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">FAQ</span>
+                <h2 class="section-title">Frequently asked questions</h2>
+            </div>
+            
+            <div class="faq-list" data-animate="fade-up">
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>What is an Additive Manufacturing Execution System (MES)?</span>
+                        <span class="faq-chevron" aria-hidden="true">+</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>An Additive Manufacturing Execution System (MES) is specialized software that manages and optimizes 3D printing operations. It handles job scheduling, printer fleet monitoring, material inventory management, quality control workflows, and production traceability — specifically built for FDM, SLA, and SLS technologies rather than adapted from traditional manufacturing MES.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>Which 3D printing technologies does Pryysm support?</span>
+                        <span class="faq-chevron" aria-hidden="true">+</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Pryysm supports FDM (Fused Deposition Modeling), SLA (Stereolithography), and SLS (Selective Laser Sintering). This covers the majority of industrial and professional 3D printers including models from Creality, Bambu Lab, Prusa, Formlabs, EOS, and others.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>Can Pryysm handle multiple companies or departments?</span>
+                        <span class="faq-chevron" aria-hidden="true">+</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Yes. Pryysm is architected as a multi-tenant SaaS from the ground up. Each tenant operates in a fully isolated environment with PostgreSQL Row Level Security enforcing strict data boundaries. This makes it ideal for service bureaus, corporate R&D centers with multiple divisions, or educational institutions.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>How does the AI Assistant work?</span>
+                        <span class="faq-chevron" aria-hidden="true">+</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>The Pryysm AI Assistant analyzes your operational data to provide insights, anomaly detection, and recommendations. You can ask natural language questions like "What is my fleet OEE this week?" or "Which material will stock out first?" The AI can also suggest optimal job sequencing and flag potential quality risks before they occur.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>Is my data secure?</span>
+                        <span class="faq-chevron" aria-hidden="true">+</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Security is core to Pryysm's architecture. We use JWT-based authentication with bcrypt password hashing, PostgreSQL Row Level Security for tenant isolation, and HTTPS encryption for all data in transit. Enterprise plans include SSO/SAML integration and dedicated infrastructure options.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>Can I import data from my existing spreadsheets?</span>
+                        <span class="faq-chevron" aria-hidden="true">+</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Yes. Pryysm supports CSV import for materials, printers, user lists, and historical job data. Our onboarding team can also assist with migration from existing systems via our REST API. Most teams are fully operational within one business day.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Final CTA -->
+    <section class="section cta" id="cta">
+        <div class="section-container">
+            <div class="cta-box" data-animate="fade-up">
+                <h2 class="cta-title">Ready to scale your AM operation?</h2>
+                <p class="cta-desc">See Pryysm in action. Book a live demo with our team and get started in minutes.</p>
+                <div class="cta-actions">
+                    <a href="https://calendly.com/bhavin-lad-3d-prodigy/pryysm-demo" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-xl glow">
+                        Book a Demo
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="https://calendly.com/bhavin-lad-3d-prodigy/pryysm-demo" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-xl">Schedule a Call</a>
+                </div>
+                <p class="cta-guarantee">✓ 30-min live walkthrough &nbsp;·&nbsp; ✓ No commitment required &nbsp;·&nbsp; ✓ Get answers to your questions</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo" aria-label="Pryysm Home">
+                        <svg class="logo-icon" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M22 3L40 12L22 21L4 12L22 3Z" stroke="#F5A623" stroke-width="2.8" stroke-linejoin="round"/>
+                            <path d="M4 19L22 28L40 19" stroke="#F5A623" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4 26L22 35L40 26" stroke="#F5A623" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="logo-name">Pryysm</span>
+                        <span class="logo-by">by 3D Prodigy</span>
+                    </a>
+                    <p class="footer-tagline">The execution layer for additive manufacturing. Built for teams that ship.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                        <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Get Started</a></li>
+                        <li><a href="#">Changelog</a></li>
+                        <li><a href="#">Roadmap</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API Reference</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2026 Pryysm. All rights reserved.</p>
+                <p class="footer-made">Made for additive manufacturers.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
