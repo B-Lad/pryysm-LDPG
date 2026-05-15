@@ -8,6 +8,7 @@
     font-weight: 800;
     margin-bottom: 1rem;
     letter-spacing: -0.03em;
+    color: #ffffff;
 }
 
 .blog-hero-desc {
@@ -69,6 +70,7 @@
     font-weight: 700;
     margin-bottom: 0.75rem;
     line-height: 1.4;
+    color: #ffffff;
 }
 
 .blog-card-excerpt {
