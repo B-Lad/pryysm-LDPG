@@ -2092,6 +2092,44 @@ ul, ol {
     }
 }
 
+.waitlist-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.waitlist-input-group {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.waitlist-input-group input {
+    flex: 1;
+    padding: 0.875rem 1.25rem;
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-md);
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-primary);
+    font-size: 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.waitlist-input-group input:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-glow);
+}
+
+.waitlist-input-group input::placeholder {
+    color: var(--text-muted);
+}
+
+@media (max-width: 640px) {
+    .waitlist-input-group {
+        flex-direction: column;
+    }
+}
+
 /* Print styles */
 @media print {
     .nav,
