@@ -1,12 +1,13 @@
 .blog-post-header {
     padding: 8rem 0 3rem;
     text-align: center;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
 }
 
 .blog-back-link {
     display: inline-block;
     font-size: 0.95rem;
-    color: var(--accent);
+    color: #60a5fa;
     text-decoration: none;
     margin-bottom: 2rem;
     transition: color 0.2s ease;
@@ -22,6 +23,7 @@
     line-height: 1.2;
     margin-bottom: 1.5rem;
     letter-spacing: -0.02em;
+    color: #ffffff;
 }
 
 .blog-post-meta {
@@ -34,6 +36,7 @@
 
 .blog-post-content {
     padding: 2rem 0 5rem;
+    background: #0f172a;
 }
 
 .blog-post-content .section-container {
@@ -53,6 +56,7 @@
     margin-top: 3rem;
     margin-bottom: 1rem;
     letter-spacing: -0.01em;
+    color: #ffffff;
 }
 
 .blog-post-content p {
@@ -60,6 +64,23 @@
     line-height: 1.8;
     color: rgba(255, 255, 255, 0.75);
     margin-bottom: 1.5rem;
+}
+
+.blog-post-content ul {
+    margin: 1.5rem 0;
+    padding-left: 1.5rem;
+    list-style: disc;
+}
+
+.blog-post-content li {
+    margin-bottom: 0.75rem;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.7;
+}
+
+.blog-post-content strong {
+    color: #ffffff;
+    font-weight: 600;
 }
 
 .blog-post-cta {
@@ -75,11 +96,13 @@
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 0.75rem;
+    color: #ffffff;
 }
 
 .blog-post-cta p {
     font-size: 1.05rem;
     margin-bottom: 1.5rem;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 @media (max-width: 768px) {
