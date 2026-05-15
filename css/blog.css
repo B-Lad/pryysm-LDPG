@@ -1,6 +1,7 @@
 .blog-hero {
     padding: 8rem 0 4rem;
     text-align: center;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
 }
 
 .blog-hero-title {
@@ -20,6 +21,7 @@
 
 .blog-section {
     padding: 4rem 0 6rem;
+    background: #0f172a;
 }
 
 .blog-grid {
@@ -29,7 +31,7 @@
 }
 
 .blog-card {
-    background: rgba(30, 58, 110, 0.3);
+    background: rgba(30, 41, 59, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 16px;
     overflow: hidden;
@@ -39,6 +41,7 @@
 .blog-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
 }
 
 .blog-card-image {
