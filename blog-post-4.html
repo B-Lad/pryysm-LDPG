@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#1e3a6e">
+    
+    <title>Job Scheduling Strategies for Mixed Technology Fleets — Pryysm MES</title>
+    <meta name="description" content="Optimize throughput when running FDM, SLA, and SLS machines side by side with different cycle times and requirements.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/blog-post.css">
+</head>
+<body>
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="index.html" class="logo" aria-label="Pryysm Home">
+                <svg class="logo-icon" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M22 3L40 12L22 21L4 12L22 3Z" stroke="#F5A623" stroke-width="2.8" stroke-linejoin="round"/>
+                    <path d="M4 19L22 28L40 19" stroke="#F5A623" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M4 26L22 35L40 26" stroke="#F5A623" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="logo-name">Pryysm</span>
+                <span class="logo-by">by 3D Prodigy</span>
+            </a>
+            
+            <div class="nav-menu">
+                <a href="index.html#features" class="nav-link">Features</a>
+                <a href="index.html#how-it-works" class="nav-link">How it Works</a>
+                <a href="index.html#pricing" class="nav-link">Get Started</a>
+                <a href="blog.html" class="nav-link active">Blog</a>
+            </div>
+            
+            <div class="nav-actions">
+                <a href="https://calendly.com/bhavin-lad-3d-prodigy/pryysm-demo" target="_blank" rel="noopener noreferrer" class="btn btn-primary glow">Book a Demo</a>
+            </div>
+        </div>
+    </nav>
+
+    <article class="blog-post">
+        <header class="blog-post-header">
+            <div class="section-container">
+                <a href="blog.html" class="blog-back-link">← Back to Blog</a>
+                <span class="blog-card-category">Scheduling</span>
+                <h1 class="blog-post-title">Job Scheduling Strategies for Mixed Technology Fleets</h1>
+                <div class="blog-post-meta">
+                    <span>May 10, 2026</span>
+                    <span>8 min read</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="blog-post-content">
+            <div class="section-container">
+                <p class="lead">Running FDM, SLA, and SLS machines in the same facility creates unique scheduling challenges. Each technology has different cycle times, post-processing requirements, and material constraints. Optimizing across all of them requires more than a calendar app.</p>
+
+                <h2>The Complexity of Mixed Fleets</h2>
+                <p>An FDM job might run for 12 hours with minimal post-processing. An SLA print takes 6 hours but needs 30 minutes of washing and 2 hours of curing. An SLS build runs for 24 hours followed by depowdering and media blasting. These aren't interchangeable — you can't swap an SLA job to an FDM machine when one is busy.</p>
+
+                <p>Effective scheduling across mixed technologies requires understanding these constraints and planning accordingly.</p>
+
+                <h2>Technology-Specific Considerations</h2>
+
+                <h3>FDM Scheduling</h3>
+                <p>FDM is the most flexible — fast setup, easy material swaps, and minimal post-processing. Key strategies:</p>
+                <ul>
+                    <li>Batch similar materials together to minimize filament changes</li>
+                    <li>Schedule tall prints overnight so they complete by morning</li>
+                    <li>Leave buffer time for bed leveling and first layer verification</li>
+                </ul>
+
+                <h3>SLA Scheduling</h3>
+                <p>SLA adds resin handling and post-processing steps that must be factored in:</p>
+                <ul>
+                    <li>Account for resin warming time before printing</li>
+                    <li>Schedule washing and curing capacity alongside printer availability</li>
+                    <li>Group clear resin jobs together to avoid contamination from pigmented resins</li>
+                    <li>Plan support removal labor — it's more intensive than FDM</li>
+                </ul>
+
+                <h3>SLS Scheduling</h3>
+                <p>SLS has the longest cycle times and most complex powder management:</p>
+                <ul>
+                    <li>Builds often run 20+ hours — plan around shift changes</li>
+                    <li>Cool-down time can take 8–12 hours before depowdering</li>
+                    <li>Fresh powder mixing ratios must be tracked per build</li>
+                    <li>Depowdering stations are a bottleneck — schedule accordingly</li>
+                </ul>
+
+                <h2>Capacity-Aware Scheduling</h2>
+                <p>The best scheduling systems understand your actual capacity, not just machine availability. This includes:</p>
+                <ul>
+                    <li><strong>Technician availability:</strong> Who's trained on which machines?</li>
+                    <li><strong>Post-processing capacity:</strong> Can your wash station handle three SLA prints finishing simultaneously?</li>
+                    <li><strong>Material stock:</strong> Do you have enough PA12 powder for that big SLS build?</li>
+                    <li><strong>WIP limits:</strong> Prevent bottlenecks by limiting work-in-progress at each stage</li>
+                </ul>
+
+                <h2>Week and Month Views</h2>
+                <p>Daily scheduling is tactical, but you need strategic visibility too. Week and month views reveal patterns:</p>
+                <ul>
+                    <li>Are certain machines consistently overloaded while others sit idle?</li>
+                    <li>Do you have enough capacity to hit next month's delivery commitments?</li>
+                    <li>Which weeks need overtime to meet deadlines?</li>
+                </ul>
+
+                <h2>The Role of AI in Scheduling</h2>
+                <p>Advanced MES platforms use AI to suggest optimal job sequences based on historical data, predict completion times more accurately, and flag potential conflicts before they happen. This isn't science fiction — it's available today and delivers measurable improvements.</p>
+
+                <h2>Stop Playing Tetris</h2>
+                <p>If you're manually juggling jobs across machines, sending operators conflicting instructions, or missing deliveries because post-processing was a bottleneck, it's time for a proper scheduling system.</p>
+
+                <p>Pryysm's Print Scheduling module handles all of this automatically — capacity-aware allocation across FDM, SLA, and SLS with day, week, and month views. Book a demo to see it in action.</p>
+
+                <div class="blog-post-cta">
+                    <h3>Ready to scale your operation?</h3>
+                    <p>See how Pryysm helps print farms grow from 5 to 50+ machines without losing control.</p>
+                    <a href="https://calendly.com/bhavin-lad-3d-prodigy/pryysm-demo" target="_blank" rel="noopener noreferrer" class="btn btn-primary glow">Book a Demo</a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <footer class="footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo" aria-label="Pryysm Home">
+                        <svg class="logo-icon" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M22 3L40 12L22 21L4 12L22 3Z" stroke="#F5A623" stroke-width="2.8" stroke-linejoin="round"/>
+                            <path d="M4 19L22 28L40 19" stroke="#F5A623" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4 26L22 35L40 26" stroke="#F5A623" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="logo-name">Pryysm</span>
+                        <span class="logo-by">by 3D Prodigy</span>
+                    </a>
+                    <p class="footer-tagline">The execution layer for additive manufacturing. Built for teams that ship.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="index.html#pricing">Get Started</a></li>
+                        <li><a href="#">Changelog</a></li>
+                        <li><a href="#">Roadmap</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API Reference</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="index.html#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2026 Pryysm. All rights reserved.</p>
+                <p class="footer-made">Made for additive manufacturers.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
